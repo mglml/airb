@@ -1,0 +1,158 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+.el-input--prefix .el-input__inner {
+  height: 48px;
+}
+
+.select {
+  .el-input--suffix {
+    width: 60% !important;
+  }
+  .el-input__inner {
+    height: 48px !important;
+  }
+  margin-top: 120px;
+  margin-left: 18% !important;
+  .el-range-input {
+    color: #484848;
+  }
+}
+.el-input__inner {
+  &::placeholder {
+    color: red;
+  }
+
+  &::-webkit-input-placeholder {
+    /* WebKit browsers 适配谷歌 */
+    color: #484848;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 适配火狐 */
+    color: #484848;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ 适配火狐 */
+    color: #484848;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+  适配ie*/
+    color: #484848;
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+.el-upload__input {
+  display: none;
+}
+.el-radio-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  // border: 1px solid #DCDFE6;
+}
+.el-radio-button__inner {
+  width: 115px;
+  font-size: 15px;
+  border-left: 1px solid #dcdfe6 !important;
+}
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  color: #fff;
+  background-color: rgb(25, 102, 110);
+  border-color: rgb(25, 102, 110);
+}
+.el-button--info {
+  background-color: rgb(25, 102, 110);
+  border-color: rgb(25, 102, 110);
+}
+.house-title {
+  padding-left: 10px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
